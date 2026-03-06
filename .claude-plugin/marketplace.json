@@ -59,6 +59,17 @@
       "category": "productivity",
       "source": "./external_plugins/test-integration",
       "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/external_plugins/test-integration"
+    },
+    {
+      "name": "test-2",
+      "description": "Test plugin 2 for validating marketplace plugin registration",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/test-2",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/test-2"
     }
   ]
 }

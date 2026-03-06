@@ -1,7 +1,7 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "test-marketplace",
-  "description": "Private test marketplace for development and testing of Claude Code plugins",
+  "name": "test-public-marketplace",
+  "description": "Public test marketplace for development and testing of Claude Code plugins",
   "owner": {
     "name": "jaysunmah",
     "email": "test@example.com"

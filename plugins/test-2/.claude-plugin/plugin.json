@@ -1,8 +1,0 @@
-{
-  "name": "test-2",
-  "description": "Test plugin 2 for validating marketplace plugin registration",
-  "author": {
-    "name": "Test Author",
-    "email": "test@example.com"
-  }
-}

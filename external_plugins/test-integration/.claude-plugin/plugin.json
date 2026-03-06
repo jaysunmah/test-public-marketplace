@@ -1,0 +1,8 @@
+{
+  "name": "test-integration",
+  "description": "Test external integration plugin with MCP server",
+  "author": {
+    "name": "Test Partner",
+    "email": "partner@example.com"
+  }
+}

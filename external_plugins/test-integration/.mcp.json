@@ -1,0 +1,6 @@
+{
+  "test-integration-server": {
+    "type": "http",
+    "url": "https://api.test-integration.example.com/mcp"
+  }
+}

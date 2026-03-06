@@ -1,0 +1,8 @@
+{
+  "name": "code-review",
+  "description": "Automated code review for pull requests using specialized agents",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  }
+}

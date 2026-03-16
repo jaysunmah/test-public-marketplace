@@ -1141,6 +1141,126 @@
       "source": "./plugins/team-capacity-kit",
       "category": "productivity",
       "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/team-capacity-kit"
+    },
+    {
+      "name": "accessibility-review-lab",
+      "description": "Accessibility Review workflows for accessible product design and interaction quality packaged as a reusable lab-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/accessibility-review-lab",
+      "category": "design",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/accessibility-review-lab"
+    },
+    {
+      "name": "billing-operations-lab",
+      "description": "Billing Operations workflows for billing workflows, payment support, and reconciliation readiness packaged as a reusable lab-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/billing-operations-lab",
+      "category": "operations",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/billing-operations-lab"
+    },
+    {
+      "name": "mobile-release-lab",
+      "description": "Mobile Release workflows for mobile launch readiness, store coordination, and rollback awareness packaged as a reusable lab-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/mobile-release-lab",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/mobile-release-lab"
+    },
+    {
+      "name": "search-quality-lab",
+      "description": "Search Quality workflows for search relevance, query behavior, and result quality review packaged as a reusable lab-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/search-quality-lab",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/search-quality-lab"
+    },
+    {
+      "name": "ai-prompt-ops-lab",
+      "description": "AI Prompt Ops workflows for prompt workflow maintenance, evaluation loops, and model-facing changes packaged as a reusable lab-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/ai-prompt-ops-lab",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/ai-prompt-ops-lab"
+    },
+    {
+      "name": "integration-lifecycle-lab",
+      "description": "Integration Lifecycle workflows for partner integration planning, changes, and supportability packaged as a reusable lab-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/integration-lifecycle-lab",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/integration-lifecycle-lab"
+    },
+    {
+      "name": "compliance-readiness-lab",
+      "description": "Compliance Readiness workflows for compliance preparation, control reviews, and evidence collection packaged as a reusable lab-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/compliance-readiness-lab",
+      "category": "security",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/compliance-readiness-lab"
+    },
+    {
+      "name": "developer-experience-lab",
+      "description": "Developer Experience workflows for internal tooling usability, setup friction, and contributor workflows packaged as a reusable lab-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/developer-experience-lab",
+      "category": "documentation",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/developer-experience-lab"
+    },
+    {
+      "name": "content-governance-lab",
+      "description": "Content Governance workflows for editorial workflows, content changes, and publishing quality packaged as a reusable lab-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/content-governance-lab",
+      "category": "documentation",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/content-governance-lab"
+    },
+    {
+      "name": "team-capacity-lab",
+      "description": "Team Capacity workflows for planning load, work intake, and delivery-risk communication packaged as a reusable lab-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/team-capacity-lab",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/team-capacity-lab"
     }
   ]
 }

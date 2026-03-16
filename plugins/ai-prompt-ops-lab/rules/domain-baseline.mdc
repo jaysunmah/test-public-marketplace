@@ -1,0 +1,9 @@
+---
+description: Use a consistent baseline when working on ai prompt ops tasks
+alwaysApply: true
+---
+
+- Keep recommendations grounded in prompt workflow maintenance, evaluation loops, and model-facing changes.
+- Prefer concrete workflows over abstract process advice.
+- Name ownership, validation, and rollback or fallback paths when relevant.
+- Keep the highest-risk gaps explicit instead of burying them in detail.

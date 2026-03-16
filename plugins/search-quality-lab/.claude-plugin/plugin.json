@@ -1,0 +1,14 @@
+{
+  "name": "search-quality-lab",
+  "description": "Search Quality workflows for search relevance, query behavior, and result quality review packaged as a reusable lab-style plugin",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "development",
+    "workflow",
+    "assistant"
+  ]
+}

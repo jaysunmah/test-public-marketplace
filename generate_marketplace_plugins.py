@@ -2355,7 +2355,7 @@ When invoked:
     },
 ]
 
-AUTO_BATCH_COUNT = 2
+AUTO_BATCH_COUNT = 3
 
 AUTO_ARCHETYPES = [
     "advisor",

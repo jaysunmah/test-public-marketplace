@@ -1,0 +1,14 @@
+{
+  "name": "team-capacity-coach",
+  "description": "Team Capacity workflows for planning load, work intake, and delivery-risk communication packaged as a reusable coach-style plugin",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "productivity",
+    "workflow",
+    "assistant"
+  ]
+}

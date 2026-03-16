@@ -661,6 +661,126 @@
       "source": "./plugins/team-capacity-coach",
       "category": "productivity",
       "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/team-capacity-coach"
+    },
+    {
+      "name": "accessibility-review-desk",
+      "description": "Accessibility Review workflows for accessible product design and interaction quality packaged as a reusable desk-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/accessibility-review-desk",
+      "category": "design",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/accessibility-review-desk"
+    },
+    {
+      "name": "billing-operations-desk",
+      "description": "Billing Operations workflows for billing workflows, payment support, and reconciliation readiness packaged as a reusable desk-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/billing-operations-desk",
+      "category": "operations",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/billing-operations-desk"
+    },
+    {
+      "name": "mobile-release-desk",
+      "description": "Mobile Release workflows for mobile launch readiness, store coordination, and rollback awareness packaged as a reusable desk-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/mobile-release-desk",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/mobile-release-desk"
+    },
+    {
+      "name": "search-quality-desk",
+      "description": "Search Quality workflows for search relevance, query behavior, and result quality review packaged as a reusable desk-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/search-quality-desk",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/search-quality-desk"
+    },
+    {
+      "name": "ai-prompt-ops-desk",
+      "description": "AI Prompt Ops workflows for prompt workflow maintenance, evaluation loops, and model-facing changes packaged as a reusable desk-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/ai-prompt-ops-desk",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/ai-prompt-ops-desk"
+    },
+    {
+      "name": "integration-lifecycle-desk",
+      "description": "Integration Lifecycle workflows for partner integration planning, changes, and supportability packaged as a reusable desk-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/integration-lifecycle-desk",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/integration-lifecycle-desk"
+    },
+    {
+      "name": "compliance-readiness-desk",
+      "description": "Compliance Readiness workflows for compliance preparation, control reviews, and evidence collection packaged as a reusable desk-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/compliance-readiness-desk",
+      "category": "security",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/compliance-readiness-desk"
+    },
+    {
+      "name": "developer-experience-desk",
+      "description": "Developer Experience workflows for internal tooling usability, setup friction, and contributor workflows packaged as a reusable desk-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/developer-experience-desk",
+      "category": "documentation",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/developer-experience-desk"
+    },
+    {
+      "name": "content-governance-desk",
+      "description": "Content Governance workflows for editorial workflows, content changes, and publishing quality packaged as a reusable desk-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/content-governance-desk",
+      "category": "documentation",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/content-governance-desk"
+    },
+    {
+      "name": "team-capacity-desk",
+      "description": "Team Capacity workflows for planning load, work intake, and delivery-risk communication packaged as a reusable desk-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/team-capacity-desk",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/team-capacity-desk"
     }
   ]
 }

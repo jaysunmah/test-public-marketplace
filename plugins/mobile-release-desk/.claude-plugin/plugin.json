@@ -1,0 +1,14 @@
+{
+  "name": "mobile-release-desk",
+  "description": "Mobile Release workflows for mobile launch readiness, store coordination, and rollback awareness packaged as a reusable desk-style plugin",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "productivity",
+    "workflow",
+    "assistant"
+  ]
+}

@@ -1,0 +1,9 @@
+---
+description: Use a consistent baseline when working on integration lifecycle tasks
+alwaysApply: true
+---
+
+- Keep recommendations grounded in partner integration planning, changes, and supportability.
+- Prefer concrete workflows over abstract process advice.
+- Name ownership, validation, and rollback or fallback paths when relevant.
+- Keep the highest-risk gaps explicit instead of burying them in detail.

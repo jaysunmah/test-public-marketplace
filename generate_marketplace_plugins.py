@@ -2355,6 +2355,235 @@ When invoked:
     },
 ]
 
+AUTO_BATCH_COUNT = 1
+
+AUTO_ARCHETYPES = [
+    "advisor",
+    "auditor",
+    "coach",
+    "desk",
+    "engine",
+    "hub",
+    "kit",
+    "lab",
+    "planner",
+    "studio",
+]
+
+AUTO_DOMAINS = [
+    {
+        "slug": "accessibility-review",
+        "title": "Accessibility Review",
+        "category": "design",
+        "focus": "accessible product design and interaction quality",
+        "artifact": "screens, forms, and interactive flows",
+    },
+    {
+        "slug": "billing-operations",
+        "title": "Billing Operations",
+        "category": "operations",
+        "focus": "billing workflows, payment support, and reconciliation readiness",
+        "artifact": "billing events, invoices, and operational handoffs",
+    },
+    {
+        "slug": "mobile-release",
+        "title": "Mobile Release",
+        "category": "productivity",
+        "focus": "mobile launch readiness, store coordination, and rollback awareness",
+        "artifact": "release notes, rollout checklists, and mobile QA paths",
+    },
+    {
+        "slug": "search-quality",
+        "title": "Search Quality",
+        "category": "development",
+        "focus": "search relevance, query behavior, and result quality review",
+        "artifact": "queries, ranking rules, and result-set behavior",
+    },
+    {
+        "slug": "ai-prompt-ops",
+        "title": "AI Prompt Ops",
+        "category": "development",
+        "focus": "prompt workflow maintenance, evaluation loops, and model-facing changes",
+        "artifact": "prompt templates, evaluation cases, and operator procedures",
+    },
+    {
+        "slug": "integration-lifecycle",
+        "title": "Integration Lifecycle",
+        "category": "development",
+        "focus": "partner integration planning, changes, and supportability",
+        "artifact": "integration contracts, launch steps, and dependency boundaries",
+    },
+    {
+        "slug": "compliance-readiness",
+        "title": "Compliance Readiness",
+        "category": "security",
+        "focus": "compliance preparation, control reviews, and evidence collection",
+        "artifact": "process docs, control mappings, and review checklists",
+    },
+    {
+        "slug": "developer-experience",
+        "title": "Developer Experience",
+        "category": "documentation",
+        "focus": "internal tooling usability, setup friction, and contributor workflows",
+        "artifact": "developer docs, setup flows, and common local tasks",
+    },
+    {
+        "slug": "content-governance",
+        "title": "Content Governance",
+        "category": "documentation",
+        "focus": "editorial workflows, content changes, and publishing quality",
+        "artifact": "content review steps, publishing checklists, and ownership rules",
+    },
+    {
+        "slug": "team-capacity",
+        "title": "Team Capacity",
+        "category": "productivity",
+        "focus": "planning load, work intake, and delivery-risk communication",
+        "artifact": "capacity plans, prioritization notes, and staffing assumptions",
+    },
+]
+
+
+def build_auto_plugin(domain: dict, archetype: str, batch_number: int) -> dict:
+    plugin_name = f"{domain['slug']}-{archetype}"
+    skill_base = domain["slug"]
+    title = domain["title"]
+    focus = domain["focus"]
+    artifact = domain["artifact"]
+    description = (
+        f"{title} workflows for {focus} packaged as a reusable {archetype}-style plugin"
+    )
+
+    return {
+        "name": plugin_name,
+        "description": description,
+        "category": domain["category"],
+        "skills": [
+            {
+                "name": f"{skill_base}-plan",
+                "description": f"Plan work around {focus}. Use when the team needs a clearer path for {artifact}.",
+                "body": f"""# {title} Planning
+
+Create a practical plan for {focus}.
+
+## When to Use
+
+- The user needs structure around {artifact}
+- A workflow in this area is growing more complex
+- The team wants a clearer starting point before implementation or rollout
+
+## Instructions
+
+1. Define the main goal, owner, and constraints.
+2. Break the work into a small number of reviewable steps.
+3. Highlight the riskiest assumptions and coordination points.
+4. Recommend how progress or quality should be checked.
+5. End with the smallest high-confidence next step.
+""",
+            },
+            {
+                "name": f"{skill_base}-review",
+                "description": f"Review {artifact} for quality and gaps. Use when changes in {title.lower()} need a fast, structured pass.",
+                "body": f"""# {title} Review
+
+Run a focused review of {artifact}.
+
+## When to Use
+
+- A change in this domain needs a second pass
+- Requirements or quality bars still feel fuzzy
+- The team wants a concise review checklist instead of a broad rewrite
+
+## Instructions
+
+1. Identify the intended outcome for the workflow or change.
+2. Review the most important risks and edge cases first.
+3. Separate must-fix issues from follow-up improvements.
+4. Call out missing owners, validation, or documentation.
+5. Summarize the top improvements in priority order.
+""",
+            },
+        ],
+        "rules": [
+            {
+                "filename": "domain-baseline.mdc",
+                "description": f"Use a consistent baseline when working on {title.lower()} tasks",
+                "alwaysApply": True,
+                "globs": None,
+                "body": f"""- Keep recommendations grounded in {focus}.
+- Prefer concrete workflows over abstract process advice.
+- Name ownership, validation, and rollback or fallback paths when relevant.
+- Keep the highest-risk gaps explicit instead of burying them in detail.
+""",
+            },
+            {
+                "filename": "review-checks.mdc",
+                "description": f"Apply when reviewing {artifact} for this plugin",
+                "alwaysApply": False,
+                "globs": ["**/*.md", "**/*.json", "**/*.yaml", "**/*.yml", "**/*.ts"],
+                "body": f"""- Focus on the quality of {artifact}, not just formatting.
+- Separate operational or delivery risk from minor polish.
+- Keep recommendations actionable and scoped.
+- End with the clearest next step for the team.
+""",
+            },
+        ],
+        "agents": [
+            {
+                "name": f"{skill_base}-{archetype}-planner",
+                "description": f"{title} planning specialist. Use when {artifact} need clearer structure.",
+                "body": f"""You are a {title.lower()} specialist working in a {archetype} role.
+
+When invoked:
+1. Clarify the goal and operating constraints
+2. Identify the main risks around {artifact}
+3. Break the work into a simple plan
+4. Highlight validation and ownership gaps
+5. Return the most useful next actions first
+""",
+            },
+            {
+                "name": f"{skill_base}-{archetype}-reviewer",
+                "description": f"{title} reviewer. Use when changes in this domain need a fast quality pass.",
+                "body": f"""You review {artifact} for quality, clarity, and risk.
+
+When invoked:
+1. Identify the intended outcome of the change
+2. Review the highest-impact risks first
+3. Distinguish must-fix issues from later improvements
+4. Call out missing validation or ownership
+5. Summarize the top findings clearly
+""",
+            },
+        ],
+        "commands": [
+            {
+                "filename": "domain-review.md",
+                "description": f"Create a concise {title.lower()} review brief",
+                "argument_hint": "<topic>",
+                "body": f"""Create a concise review brief for the requested {title.lower()} topic.
+
+1. Summarize the target workflow or change.
+2. Identify the main risks and gaps.
+3. Recommend the highest-value next steps.
+4. End with the clearest short-term action.
+""",
+            }
+        ],
+        "metadata": {
+            "auto_batch": batch_number,
+            "archetype": archetype,
+        },
+    }
+
+
+def build_all_plugins() -> list[dict]:
+    all_plugins = list(PLUGINS)
+    for batch_number, archetype in enumerate(AUTO_ARCHETYPES[:AUTO_BATCH_COUNT], start=3):
+        for domain in AUTO_DOMAINS:
+            all_plugins.append(build_auto_plugin(domain, archetype, batch_number))
+    return all_plugins
+
 
 def write_text(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -2410,7 +2639,9 @@ def make_rule(rule: dict) -> str:
 
 
 def main() -> None:
-    for plugin in PLUGINS:
+    all_plugins = build_all_plugins()
+
+    for plugin in all_plugins:
         plugin_root = PLUGINS_ROOT / plugin["name"]
         write_text(plugin_root / ".claude-plugin" / "plugin.json", json.dumps(
             {
@@ -2476,7 +2707,7 @@ def main() -> None:
 
     marketplace = json.loads(MARKETPLACE_PATH.read_text())
     existing_names = {entry["name"] for entry in marketplace.get("plugins", [])}
-    for plugin in PLUGINS:
+    for plugin in all_plugins:
         if plugin["name"] in existing_names:
             continue
         marketplace["plugins"].append(
@@ -2492,7 +2723,7 @@ def main() -> None:
         )
 
     write_text(MARKETPLACE_PATH, json.dumps(marketplace, indent=2))
-    print(f"Created {len(PLUGINS)} plugins and updated marketplace manifest.")
+    print(f"Created {len(all_plugins)} plugins and updated marketplace manifest.")
 
 
 if __name__ == "__main__":

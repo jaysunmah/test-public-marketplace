@@ -1,0 +1,15 @@
+---
+description: Apply when reviewing release notes, rollout checklists, and mobile QA paths for this plugin
+alwaysApply: false
+globs:
+  - **/*.md
+  - **/*.json
+  - **/*.yaml
+  - **/*.yml
+  - **/*.ts
+---
+
+- Focus on the quality of release notes, rollout checklists, and mobile QA paths, not just formatting.
+- Separate operational or delivery risk from minor polish.
+- Keep recommendations actionable and scoped.
+- End with the clearest next step for the team.

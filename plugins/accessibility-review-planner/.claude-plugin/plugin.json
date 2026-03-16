@@ -1,0 +1,14 @@
+{
+  "name": "accessibility-review-planner",
+  "description": "Accessibility Review workflows for accessible product design and interaction quality packaged as a reusable planner-style plugin",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "design",
+    "workflow",
+    "assistant"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "developer-experience-planner",
+  "description": "Developer Experience workflows for internal tooling usability, setup friction, and contributor workflows packaged as a reusable planner-style plugin",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "documentation",
+    "workflow",
+    "assistant"
+  ]
+}

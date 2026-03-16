@@ -1261,6 +1261,126 @@
       "source": "./plugins/team-capacity-lab",
       "category": "productivity",
       "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/team-capacity-lab"
+    },
+    {
+      "name": "accessibility-review-planner",
+      "description": "Accessibility Review workflows for accessible product design and interaction quality packaged as a reusable planner-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/accessibility-review-planner",
+      "category": "design",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/accessibility-review-planner"
+    },
+    {
+      "name": "billing-operations-planner",
+      "description": "Billing Operations workflows for billing workflows, payment support, and reconciliation readiness packaged as a reusable planner-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/billing-operations-planner",
+      "category": "operations",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/billing-operations-planner"
+    },
+    {
+      "name": "mobile-release-planner",
+      "description": "Mobile Release workflows for mobile launch readiness, store coordination, and rollback awareness packaged as a reusable planner-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/mobile-release-planner",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/mobile-release-planner"
+    },
+    {
+      "name": "search-quality-planner",
+      "description": "Search Quality workflows for search relevance, query behavior, and result quality review packaged as a reusable planner-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/search-quality-planner",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/search-quality-planner"
+    },
+    {
+      "name": "ai-prompt-ops-planner",
+      "description": "AI Prompt Ops workflows for prompt workflow maintenance, evaluation loops, and model-facing changes packaged as a reusable planner-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/ai-prompt-ops-planner",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/ai-prompt-ops-planner"
+    },
+    {
+      "name": "integration-lifecycle-planner",
+      "description": "Integration Lifecycle workflows for partner integration planning, changes, and supportability packaged as a reusable planner-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/integration-lifecycle-planner",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/integration-lifecycle-planner"
+    },
+    {
+      "name": "compliance-readiness-planner",
+      "description": "Compliance Readiness workflows for compliance preparation, control reviews, and evidence collection packaged as a reusable planner-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/compliance-readiness-planner",
+      "category": "security",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/compliance-readiness-planner"
+    },
+    {
+      "name": "developer-experience-planner",
+      "description": "Developer Experience workflows for internal tooling usability, setup friction, and contributor workflows packaged as a reusable planner-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/developer-experience-planner",
+      "category": "documentation",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/developer-experience-planner"
+    },
+    {
+      "name": "content-governance-planner",
+      "description": "Content Governance workflows for editorial workflows, content changes, and publishing quality packaged as a reusable planner-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/content-governance-planner",
+      "category": "documentation",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/content-governance-planner"
+    },
+    {
+      "name": "team-capacity-planner",
+      "description": "Team Capacity workflows for planning load, work intake, and delivery-risk communication packaged as a reusable planner-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/team-capacity-planner",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/team-capacity-planner"
     }
   ]
 }

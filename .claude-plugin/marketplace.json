@@ -1381,6 +1381,126 @@
       "source": "./plugins/team-capacity-planner",
       "category": "productivity",
       "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/team-capacity-planner"
+    },
+    {
+      "name": "accessibility-review-studio",
+      "description": "Accessibility Review workflows for accessible product design and interaction quality packaged as a reusable studio-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/accessibility-review-studio",
+      "category": "design",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/accessibility-review-studio"
+    },
+    {
+      "name": "billing-operations-studio",
+      "description": "Billing Operations workflows for billing workflows, payment support, and reconciliation readiness packaged as a reusable studio-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/billing-operations-studio",
+      "category": "operations",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/billing-operations-studio"
+    },
+    {
+      "name": "mobile-release-studio",
+      "description": "Mobile Release workflows for mobile launch readiness, store coordination, and rollback awareness packaged as a reusable studio-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/mobile-release-studio",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/mobile-release-studio"
+    },
+    {
+      "name": "search-quality-studio",
+      "description": "Search Quality workflows for search relevance, query behavior, and result quality review packaged as a reusable studio-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/search-quality-studio",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/search-quality-studio"
+    },
+    {
+      "name": "ai-prompt-ops-studio",
+      "description": "AI Prompt Ops workflows for prompt workflow maintenance, evaluation loops, and model-facing changes packaged as a reusable studio-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/ai-prompt-ops-studio",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/ai-prompt-ops-studio"
+    },
+    {
+      "name": "integration-lifecycle-studio",
+      "description": "Integration Lifecycle workflows for partner integration planning, changes, and supportability packaged as a reusable studio-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/integration-lifecycle-studio",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/integration-lifecycle-studio"
+    },
+    {
+      "name": "compliance-readiness-studio",
+      "description": "Compliance Readiness workflows for compliance preparation, control reviews, and evidence collection packaged as a reusable studio-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/compliance-readiness-studio",
+      "category": "security",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/compliance-readiness-studio"
+    },
+    {
+      "name": "developer-experience-studio",
+      "description": "Developer Experience workflows for internal tooling usability, setup friction, and contributor workflows packaged as a reusable studio-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/developer-experience-studio",
+      "category": "documentation",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/developer-experience-studio"
+    },
+    {
+      "name": "content-governance-studio",
+      "description": "Content Governance workflows for editorial workflows, content changes, and publishing quality packaged as a reusable studio-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/content-governance-studio",
+      "category": "documentation",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/content-governance-studio"
+    },
+    {
+      "name": "team-capacity-studio",
+      "description": "Team Capacity workflows for planning load, work intake, and delivery-risk communication packaged as a reusable studio-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/team-capacity-studio",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/team-capacity-studio"
     }
   ]
 }

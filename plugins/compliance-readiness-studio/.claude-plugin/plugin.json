@@ -1,0 +1,14 @@
+{
+  "name": "compliance-readiness-studio",
+  "description": "Compliance Readiness workflows for compliance preparation, control reviews, and evidence collection packaged as a reusable studio-style plugin",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "security",
+    "workflow",
+    "assistant"
+  ]
+}

@@ -1,0 +1,9 @@
+---
+description: Use a consistent baseline when working on team capacity tasks
+alwaysApply: true
+---
+
+- Keep recommendations grounded in planning load, work intake, and delivery-risk communication.
+- Prefer concrete workflows over abstract process advice.
+- Name ownership, validation, and rollback or fallback paths when relevant.
+- Keep the highest-risk gaps explicit instead of burying them in detail.

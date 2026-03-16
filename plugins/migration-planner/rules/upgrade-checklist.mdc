@@ -1,0 +1,14 @@
+---
+description: Apply when reviewing dependency or framework upgrades
+alwaysApply: false
+globs:
+  - **/package.json
+  - **/pyproject.toml
+  - **/go.mod
+  - **/*.md
+---
+
+- Distinguish build-time issues from runtime and operational regressions.
+- Verify test coverage around changed integration boundaries.
+- Note any schema, config, or environment changes required.
+- Prefer narrow, observable rollout slices where possible.

@@ -1,0 +1,14 @@
+---
+description: Apply when reviewing product copy and interface labels
+alwaysApply: false
+globs:
+  - **/*.md
+  - **/*.tsx
+  - **/*.jsx
+  - **/*.html
+---
+
+- Prefer action-oriented labels over internal jargon.
+- Keep helper text short and specific.
+- Ensure destructive actions are clearly labeled.
+- Match placeholder text to the input's expected format.

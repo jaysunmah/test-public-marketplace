@@ -1,0 +1,15 @@
+---
+description: Apply when reviewing data flow across trust boundaries
+alwaysApply: false
+globs:
+  - **/*.ts
+  - **/*.tsx
+  - **/*.js
+  - **/*.py
+  - **/*.md
+---
+
+- Check untrusted inputs at entry points and dangerous outputs at sinks.
+- Prefer safe APIs and parameterization over string interpolation.
+- Note where escaping, sanitization, or content validation is required.
+- Highlight secrets, tokens, and personally sensitive fields explicitly.

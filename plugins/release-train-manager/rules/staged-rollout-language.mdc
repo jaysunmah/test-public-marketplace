@@ -1,0 +1,14 @@
+---
+description: Apply when documenting feature flags or staged release plans
+alwaysApply: false
+globs:
+  - **/*.md
+  - **/*.json
+  - **/*.yaml
+  - **/*.yml
+---
+
+- Describe each rollout stage and its target audience clearly.
+- Tie rollout advancement to specific health checks.
+- Note whether the change is reversible at each stage.
+- Keep stakeholder communication expectations explicit.

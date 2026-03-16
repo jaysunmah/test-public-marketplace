@@ -1,0 +1,11 @@
+---
+description: Apply when drafting incident timelines or recovery notes
+alwaysApply: false
+globs:
+  - **/*.md
+---
+
+- Record timestamps in a single timezone per document.
+- Keep each timeline entry short and evidence-based.
+- Note when a hypothesis was formed versus when it was confirmed.
+- Include both customer impact and operator actions.

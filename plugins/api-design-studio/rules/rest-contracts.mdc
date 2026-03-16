@@ -1,0 +1,9 @@
+---
+description: Use consistent REST contract conventions for API design tasks
+alwaysApply: true
+---
+
+- Prefer plural resource paths such as `/users` and `/orders`.
+- Use stable identifiers in URLs and keep mutable display fields in the body.
+- Document success and error payloads together so clients can implement against the full contract.
+- Avoid introducing breaking response shape changes without noting a migration path.

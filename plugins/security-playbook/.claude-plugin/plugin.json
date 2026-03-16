@@ -1,0 +1,14 @@
+{
+  "name": "security-playbook",
+  "description": "Security review helpers for auth changes, secrets handling, and threat-oriented design discussions",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "security",
+    "workflow",
+    "assistant"
+  ]
+}

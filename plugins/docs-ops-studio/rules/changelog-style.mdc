@@ -1,0 +1,11 @@
+---
+description: Apply when writing release notes or changelog entries
+alwaysApply: false
+globs:
+  - **/*.md
+---
+
+- Describe user-visible outcomes before implementation details.
+- Group related changes together to reduce noise.
+- Avoid commit-by-commit narration.
+- Note known limitations or staged rollouts when relevant.

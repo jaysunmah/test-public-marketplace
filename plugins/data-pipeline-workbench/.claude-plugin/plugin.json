@@ -1,0 +1,14 @@
+{
+  "name": "data-pipeline-workbench",
+  "description": "Workflow helpers for batch jobs, ETL design, and data quality checks",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "data",
+    "workflow",
+    "assistant"
+  ]
+}

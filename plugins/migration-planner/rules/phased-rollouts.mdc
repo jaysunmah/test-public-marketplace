@@ -1,0 +1,9 @@
+---
+description: Use phased rollout planning for risky migrations or upgrades
+alwaysApply: true
+---
+
+- Prefer staged rollouts with measurable checkpoints over big-bang cutovers.
+- Identify rollback points before recommending irreversible steps.
+- Keep compatibility periods explicit when two systems coexist.
+- Define success criteria for each migration phase.

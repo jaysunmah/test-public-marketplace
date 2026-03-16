@@ -1,0 +1,14 @@
+---
+description: Apply when reviewing API schema changes and versioning
+alwaysApply: false
+globs:
+  - **/*.json
+  - **/*.yaml
+  - **/*.yml
+  - **/*.md
+---
+
+- Prefer additive schema changes over destructive ones.
+- Mark deprecated fields explicitly and explain the replacement.
+- Keep enum growth in mind when recommending client-side branching.
+- Note whether a change affects persistence, caching, or downstream integrations.

@@ -1,0 +1,9 @@
+---
+description: Favor high-signal, maintainable tests over redundant coverage
+alwaysApply: true
+---
+
+- Prefer tests that protect user-visible behavior or critical invariants.
+- Avoid adding broad, repetitive cases that only restate implementation detail.
+- Note flakiness and setup cost when recommending coverage.
+- Keep verification aligned with the change's actual risk.

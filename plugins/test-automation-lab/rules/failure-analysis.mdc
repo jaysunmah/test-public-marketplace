@@ -1,0 +1,13 @@
+---
+description: Apply when interpreting failing test output or proposing follow-up tests
+alwaysApply: false
+globs:
+  - **/*.test.*
+  - **/*.spec.*
+  - **/*.md
+---
+
+- Separate probable root cause from secondary failures.
+- Call out environmental or ordering assumptions that make tests flaky.
+- Prefer minimal reproductions for confusing regressions.
+- Suggest additional tests only when they materially reduce risk.

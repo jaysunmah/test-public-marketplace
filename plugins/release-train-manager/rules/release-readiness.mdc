@@ -1,0 +1,9 @@
+---
+description: Use explicit release gates and rollback criteria for launches
+alwaysApply: true
+---
+
+- State the go or no-go decision criteria up front.
+- Keep rollback triggers observable and specific.
+- Separate required launch checks from optional polish work.
+- Assign ownership for launch-window monitoring and communications.

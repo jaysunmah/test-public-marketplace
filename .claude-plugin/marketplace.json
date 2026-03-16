@@ -21,7 +21,9 @@
       "lspServers": {
         "typescript": {
           "command": "typescript-language-server",
-          "args": ["--stdio"],
+          "args": [
+            "--stdio"
+          ],
           "extensionToLanguage": {
             ".ts": "typescript",
             ".tsx": "typescriptreact",
@@ -59,6 +61,126 @@
       "category": "productivity",
       "source": "./external_plugins/test-integration",
       "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/external_plugins/test-integration"
+    },
+    {
+      "name": "api-design-studio",
+      "description": "API design and contract review workflows for REST and event-driven services",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/api-design-studio",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/api-design-studio"
+    },
+    {
+      "name": "incident-response-kit",
+      "description": "Incident triage, postmortem writing, and operational recovery guidance for engineering teams",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/incident-response-kit",
+      "category": "operations",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/incident-response-kit"
+    },
+    {
+      "name": "data-pipeline-workbench",
+      "description": "Workflow helpers for batch jobs, ETL design, and data quality checks",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/data-pipeline-workbench",
+      "category": "data",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/data-pipeline-workbench"
+    },
+    {
+      "name": "design-qa-assistant",
+      "description": "Design handoff, UI acceptance review, and visual QA helpers for product teams",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/design-qa-assistant",
+      "category": "design",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/design-qa-assistant"
+    },
+    {
+      "name": "docs-ops-studio",
+      "description": "Documentation maintenance helpers for changelogs, runbooks, and internal technical guides",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/docs-ops-studio",
+      "category": "documentation",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/docs-ops-studio"
+    },
+    {
+      "name": "migration-planner",
+      "description": "Planning helpers for framework upgrades, service migrations, and phased rollouts",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/migration-planner",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/migration-planner"
+    },
+    {
+      "name": "observability-auditor",
+      "description": "Monitoring, alert review, and telemetry coverage guidance for production services",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/observability-auditor",
+      "category": "operations",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/observability-auditor"
+    },
+    {
+      "name": "release-train-manager",
+      "description": "Release readiness, rollout coordination, and launch checklist helpers for product engineering",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/release-train-manager",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/release-train-manager"
+    },
+    {
+      "name": "security-playbook",
+      "description": "Security review helpers for auth changes, secrets handling, and threat-oriented design discussions",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/security-playbook",
+      "category": "security",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/security-playbook"
+    },
+    {
+      "name": "test-automation-lab",
+      "description": "Test planning and failure-analysis helpers for unit, integration, and end-to-end coverage",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/test-automation-lab",
+      "category": "quality",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/test-automation-lab"
     }
   ]
 }

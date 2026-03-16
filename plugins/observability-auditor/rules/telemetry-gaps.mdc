@@ -1,0 +1,14 @@
+---
+description: Apply when reviewing monitoring or observability coverage
+alwaysApply: false
+globs:
+  - **/*.md
+  - **/*.yaml
+  - **/*.yml
+  - **/*.json
+---
+
+- Tie telemetry to critical user journeys or system invariants.
+- Note where logs, metrics, and traces should complement one another.
+- Prefer a few high-signal indicators over many weak ones.
+- Highlight missing labels or dimensions that block useful debugging.

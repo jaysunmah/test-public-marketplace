@@ -1,0 +1,9 @@
+---
+description: Use consistent UI acceptance criteria when reviewing product surfaces
+alwaysApply: true
+---
+
+- Check default, loading, empty, success, and error states for user-facing flows.
+- Keep acceptance feedback concrete and tied to visible behavior.
+- Prioritize accessibility and clarity before pixel-perfect polish.
+- When design intent is unclear, identify the missing decision explicitly.

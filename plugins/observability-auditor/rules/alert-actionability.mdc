@@ -1,0 +1,9 @@
+---
+description: Keep alerts actionable and tied to clear owners
+alwaysApply: true
+---
+
+- Alerts should describe user impact or service health degradation, not raw system trivia alone.
+- Prefer alerts with clear owners, dashboards, and runbook links.
+- Keep severity thresholds explicit and defensible.
+- Avoid paging on symptoms that are better handled by trend monitoring.

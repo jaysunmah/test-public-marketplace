@@ -1,0 +1,14 @@
+{
+  "name": "release-train-manager",
+  "description": "Release readiness, rollout coordination, and launch checklist helpers for product engineering",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "productivity",
+    "workflow",
+    "assistant"
+  ]
+}

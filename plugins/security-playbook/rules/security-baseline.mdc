@@ -1,0 +1,9 @@
+---
+description: Apply a practical security baseline when reviewing sensitive features
+alwaysApply: true
+---
+
+- Treat auth, payments, admin actions, and secret handling as security-sensitive by default.
+- Prefer least privilege and explicit authorization checks.
+- Avoid suggesting patterns that expose secrets to clients or logs.
+- Call out validation, auditability, and abuse-case gaps clearly.

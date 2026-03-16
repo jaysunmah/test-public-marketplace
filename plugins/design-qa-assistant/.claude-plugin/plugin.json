@@ -1,0 +1,14 @@
+{
+  "name": "design-qa-assistant",
+  "description": "Design handoff, UI acceptance review, and visual QA helpers for product teams",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "design",
+    "workflow",
+    "assistant"
+  ]
+}

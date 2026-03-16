@@ -1,0 +1,9 @@
+---
+description: Keep incident analysis blameless and action-oriented
+alwaysApply: true
+---
+
+- Describe actions and system behavior rather than assigning fault to individuals.
+- Prefer evidence-backed statements over speculation.
+- Separate mitigation steps from long-term prevention work.
+- End incident summaries with the current status and next checkpoint.

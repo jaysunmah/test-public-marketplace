@@ -1,0 +1,14 @@
+{
+  "name": "migration-planner",
+  "description": "Planning helpers for framework upgrades, service migrations, and phased rollouts",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "development",
+    "workflow",
+    "assistant"
+  ]
+}

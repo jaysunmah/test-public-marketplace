@@ -1,0 +1,13 @@
+---
+description: Apply when reviewing SQL transformations or warehouse models
+alwaysApply: false
+globs:
+  - **/*.sql
+  - **/*.py
+  - **/*.md
+---
+
+- Name intermediate datasets for intent, not implementation detail.
+- Be explicit about join cardinality assumptions.
+- Note whether a query is safe for incremental re-runs.
+- Prefer readable transformations over dense one-shot SQL when maintainability matters.

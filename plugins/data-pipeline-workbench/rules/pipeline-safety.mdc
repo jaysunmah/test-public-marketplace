@@ -1,0 +1,9 @@
+---
+description: Use resilient design patterns for batch and ETL workflows
+alwaysApply: true
+---
+
+- Prefer idempotent writes and checkpointed progress where feasible.
+- Make late-arriving data behavior explicit.
+- Document how retries interact with duplicate creation or partial outputs.
+- Include data quality checks close to the transform that can fail.

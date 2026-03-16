@@ -1,0 +1,9 @@
+---
+description: Keep technical documentation concise, structured, and action-oriented
+alwaysApply: true
+---
+
+- Lead with purpose and intended audience.
+- Prefer stepwise procedures over dense paragraphs for operational tasks.
+- Explain why a step matters when the consequence is non-obvious.
+- Surface prerequisites and rollback paths early.

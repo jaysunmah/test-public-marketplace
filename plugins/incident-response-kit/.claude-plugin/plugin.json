@@ -1,0 +1,14 @@
+{
+  "name": "incident-response-kit",
+  "description": "Incident triage, postmortem writing, and operational recovery guidance for engineering teams",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "operations",
+    "workflow",
+    "assistant"
+  ]
+}

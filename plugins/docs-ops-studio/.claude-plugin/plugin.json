@@ -1,0 +1,14 @@
+{
+  "name": "docs-ops-studio",
+  "description": "Documentation maintenance helpers for changelogs, runbooks, and internal technical guides",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "documentation",
+    "workflow",
+    "assistant"
+  ]
+}

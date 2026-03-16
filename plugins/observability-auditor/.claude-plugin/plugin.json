@@ -1,0 +1,14 @@
+{
+  "name": "observability-auditor",
+  "description": "Monitoring, alert review, and telemetry coverage guidance for production services",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "operations",
+    "workflow",
+    "assistant"
+  ]
+}

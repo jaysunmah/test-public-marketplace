@@ -1,0 +1,14 @@
+{
+  "name": "api-design-studio",
+  "description": "API design and contract review workflows for REST and event-driven services",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "development",
+    "workflow",
+    "assistant"
+  ]
+}

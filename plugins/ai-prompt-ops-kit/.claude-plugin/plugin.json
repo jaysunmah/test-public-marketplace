@@ -1,0 +1,14 @@
+{
+  "name": "ai-prompt-ops-kit",
+  "description": "AI Prompt Ops workflows for prompt workflow maintenance, evaluation loops, and model-facing changes packaged as a reusable kit-style plugin",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "development",
+    "workflow",
+    "assistant"
+  ]
+}

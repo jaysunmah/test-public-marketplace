@@ -1021,6 +1021,126 @@
       "source": "./plugins/team-capacity-hub",
       "category": "productivity",
       "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/team-capacity-hub"
+    },
+    {
+      "name": "accessibility-review-kit",
+      "description": "Accessibility Review workflows for accessible product design and interaction quality packaged as a reusable kit-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/accessibility-review-kit",
+      "category": "design",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/accessibility-review-kit"
+    },
+    {
+      "name": "billing-operations-kit",
+      "description": "Billing Operations workflows for billing workflows, payment support, and reconciliation readiness packaged as a reusable kit-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/billing-operations-kit",
+      "category": "operations",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/billing-operations-kit"
+    },
+    {
+      "name": "mobile-release-kit",
+      "description": "Mobile Release workflows for mobile launch readiness, store coordination, and rollback awareness packaged as a reusable kit-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/mobile-release-kit",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/mobile-release-kit"
+    },
+    {
+      "name": "search-quality-kit",
+      "description": "Search Quality workflows for search relevance, query behavior, and result quality review packaged as a reusable kit-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/search-quality-kit",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/search-quality-kit"
+    },
+    {
+      "name": "ai-prompt-ops-kit",
+      "description": "AI Prompt Ops workflows for prompt workflow maintenance, evaluation loops, and model-facing changes packaged as a reusable kit-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/ai-prompt-ops-kit",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/ai-prompt-ops-kit"
+    },
+    {
+      "name": "integration-lifecycle-kit",
+      "description": "Integration Lifecycle workflows for partner integration planning, changes, and supportability packaged as a reusable kit-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/integration-lifecycle-kit",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/integration-lifecycle-kit"
+    },
+    {
+      "name": "compliance-readiness-kit",
+      "description": "Compliance Readiness workflows for compliance preparation, control reviews, and evidence collection packaged as a reusable kit-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/compliance-readiness-kit",
+      "category": "security",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/compliance-readiness-kit"
+    },
+    {
+      "name": "developer-experience-kit",
+      "description": "Developer Experience workflows for internal tooling usability, setup friction, and contributor workflows packaged as a reusable kit-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/developer-experience-kit",
+      "category": "documentation",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/developer-experience-kit"
+    },
+    {
+      "name": "content-governance-kit",
+      "description": "Content Governance workflows for editorial workflows, content changes, and publishing quality packaged as a reusable kit-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/content-governance-kit",
+      "category": "documentation",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/content-governance-kit"
+    },
+    {
+      "name": "team-capacity-kit",
+      "description": "Team Capacity workflows for planning load, work intake, and delivery-risk communication packaged as a reusable kit-style plugin",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/team-capacity-kit",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/team-capacity-kit"
     }
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "name": "content-governance-kit",
+  "description": "Content Governance workflows for editorial workflows, content changes, and publishing quality packaged as a reusable kit-style plugin",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "documentation",
+    "workflow",
+    "assistant"
+  ]
+}

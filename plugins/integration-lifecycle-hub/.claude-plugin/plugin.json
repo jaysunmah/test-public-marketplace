@@ -1,0 +1,14 @@
+{
+  "name": "integration-lifecycle-hub",
+  "description": "Integration Lifecycle workflows for partner integration planning, changes, and supportability packaged as a reusable hub-style plugin",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "development",
+    "workflow",
+    "assistant"
+  ]
+}

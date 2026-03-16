@@ -1,0 +1,14 @@
+{
+  "name": "platform-cost-optimizer",
+  "description": "Cost-awareness helpers for infrastructure spend, scaling choices, and efficiency tradeoff reviews",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "operations",
+    "workflow",
+    "assistant"
+  ]
+}

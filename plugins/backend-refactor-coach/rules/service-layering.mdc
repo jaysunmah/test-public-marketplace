@@ -1,0 +1,15 @@
+---
+description: Apply when reviewing backend module and service boundaries
+alwaysApply: false
+globs:
+  - **/*.ts
+  - **/*.js
+  - **/*.py
+  - **/*.go
+  - **/*.md
+---
+
+- Keep transport, business logic, and persistence concerns distinct.
+- Flag modules that depend inward and outward at the same time.
+- Prefer explicit interfaces where ownership is shared across teams.
+- Note test seams that become easier or harder after the refactor.

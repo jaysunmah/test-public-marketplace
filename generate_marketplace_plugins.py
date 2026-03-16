@@ -1183,6 +1183,1176 @@ When invoked:
             }
         ],
     },
+    {
+        "name": "backend-refactor-coach",
+        "description": "Refactoring guidance for service boundaries, legacy modules, and incremental backend cleanups",
+        "category": "development",
+        "skills": [
+            {
+                "name": "plan-backend-refactor",
+                "description": "Plan an incremental backend refactor. Use when service boundaries, module ownership, or dependency direction have become messy.",
+                "body": """# Plan Backend Refactor
+
+Create a low-risk plan for untangling backend code.
+
+## When to Use
+
+- A service or module has grown too broad
+- Dependency direction is unclear or cyclic
+- The team wants an incremental cleanup plan
+
+## Instructions
+
+1. Identify the current seam lines and ownership boundaries.
+2. Separate mechanical extraction from behavioral changes.
+3. Prefer staged moves that preserve runtime behavior.
+4. Call out integration points and rollback concerns.
+5. End with the smallest useful first step.
+""",
+            },
+            {
+                "name": "review-module-boundaries",
+                "description": "Review module boundaries for cohesion and dependency health. Use when teams suspect architectural drift.",
+                "body": """# Review Module Boundaries
+
+Look for architectural drift before suggesting major rewrites.
+
+## When to Use
+
+- A backend package feels hard to reason about
+- Responsibilities are split across the wrong layers
+- New work keeps adding coupling instead of clarity
+
+## Instructions
+
+1. Identify the main responsibilities of each module.
+2. Flag leaky abstractions or circular dependencies.
+3. Distinguish structural issues from naming-only problems.
+4. Recommend boundary changes that reduce future churn.
+5. Summarize the highest-value cleanup opportunities.
+""",
+            },
+        ],
+        "rules": [
+            {
+                "filename": "incremental-refactors.mdc",
+                "description": "Prefer incremental backend refactors over broad rewrites",
+                "alwaysApply": True,
+                "globs": None,
+                "body": """- Separate structural cleanup from behavior changes whenever possible.
+- Keep public interfaces stable while internals are being moved.
+- Name boundaries by responsibility, not by framework artifact alone.
+- Prefer a sequence of reviewable steps over a one-shot rewrite.
+""",
+            },
+            {
+                "filename": "service-layering.mdc",
+                "description": "Apply when reviewing backend module and service boundaries",
+                "alwaysApply": False,
+                "globs": ["**/*.ts", "**/*.js", "**/*.py", "**/*.go", "**/*.md"],
+                "body": """- Keep transport, business logic, and persistence concerns distinct.
+- Flag modules that depend inward and outward at the same time.
+- Prefer explicit interfaces where ownership is shared across teams.
+- Note test seams that become easier or harder after the refactor.
+""",
+            },
+        ],
+        "agents": [
+            {
+                "name": "refactor-planner",
+                "description": "Backend refactor planner. Use when messy services need an incremental cleanup strategy.",
+                "body": """You plan backend refactors with low operational risk.
+
+When invoked:
+1. Map the current responsibilities and dependency flow
+2. Identify the safest extraction seams
+3. Break the work into incremental steps
+4. Call out risks to behavior and rollout
+5. Return a concise refactor sequence
+""",
+            },
+            {
+                "name": "boundary-auditor",
+                "description": "Architecture boundary auditor. Use when modules feel coupled or responsibilities are unclear.",
+                "body": """You review backend boundaries for cohesion and maintainability.
+
+When invoked:
+1. Identify major responsibilities by module
+2. Flag coupling and layering violations
+3. Distinguish severe issues from cosmetic ones
+4. Recommend clearer ownership boundaries
+5. Summarize the top architectural fixes
+""",
+            },
+        ],
+        "commands": [
+            {
+                "filename": "refactor-plan.md",
+                "description": "Create an incremental backend refactor plan",
+                "argument_hint": "<module-name>",
+                "body": """Create an incremental refactor plan for the named module.
+
+1. Identify the current responsibilities and pain points.
+2. Propose a stepwise cleanup sequence.
+3. Note integration and regression risks.
+4. End with the safest first change.
+""",
+            }
+        ],
+    },
+    {
+        "name": "customer-research-synth",
+        "description": "Research synthesis helpers for support themes, interview notes, and product insight summaries",
+        "category": "productivity",
+        "skills": [
+            {
+                "name": "synthesize-interview-notes",
+                "description": "Synthesize user interview notes into themes and follow-up questions. Use when raw notes need a concise product readout.",
+                "body": """# Synthesize Interview Notes
+
+Turn raw research notes into a useful summary.
+
+## When to Use
+
+- Product interviews produced long, messy notes
+- Several sessions need a single thematic summary
+- The team wants clearer decisions from qualitative input
+
+## Instructions
+
+1. Group repeated observations into themes.
+2. Separate direct evidence from interpretation.
+3. Highlight unmet needs, friction, and workarounds.
+4. Note where confidence is low or sample size is small.
+5. End with product questions worth investigating next.
+""",
+            },
+            {
+                "name": "cluster-support-feedback",
+                "description": "Cluster support issues into product themes. Use when ticket volume is growing and categories are unclear.",
+                "body": """# Cluster Support Feedback
+
+Find the patterns hiding in support noise.
+
+## When to Use
+
+- Many support tickets point to overlapping issues
+- The team needs themes rather than one-off anecdotes
+- Product wants a prioritization input from customer pain
+
+## Instructions
+
+1. Group tickets by user problem, not by phrasing alone.
+2. Distinguish usability friction from product bugs.
+3. Note severity, frequency, and customer segment when available.
+4. Pull out concrete examples that illustrate each theme.
+5. Recommend which themes deserve product or engineering follow-up.
+""",
+            },
+        ],
+        "rules": [
+            {
+                "filename": "evidence-vs-inference.mdc",
+                "description": "Keep research synthesis grounded in evidence",
+                "alwaysApply": True,
+                "globs": None,
+                "body": """- Separate direct customer evidence from product interpretation.
+- Prefer recurring patterns over vivid one-off anecdotes.
+- Note confidence level when sample size or evidence quality is weak.
+- Keep recommendations tied to the observed user problem.
+""",
+            },
+            {
+                "filename": "research-summary-style.mdc",
+                "description": "Apply when summarizing interviews, feedback, or product research notes",
+                "alwaysApply": False,
+                "globs": ["**/*.md", "**/*.txt", "**/*.json"],
+                "body": """- Lead with the clearest themes before edge-case observations.
+- Quote or paraphrase evidence when it improves credibility.
+- Distinguish user goals, blockers, and current workarounds.
+- End with suggested follow-up questions or experiments.
+""",
+            },
+        ],
+        "agents": [
+            {
+                "name": "research-editor",
+                "description": "Research synthesis editor. Use when notes need to become a concise readout.",
+                "body": """You synthesize qualitative input into product-ready insights.
+
+When invoked:
+1. Identify repeated patterns and outliers
+2. Separate evidence from inference
+3. Highlight user pain and desired outcomes
+4. Recommend sensible next questions
+5. Return a concise structured summary
+""",
+            },
+            {
+                "name": "feedback-clusterer",
+                "description": "Support-feedback clusterer. Use when many customer issues need thematic grouping.",
+                "body": """You group customer feedback into actionable themes.
+
+When invoked:
+1. Identify repeated problem statements
+2. Separate bugs from workflow confusion
+3. Note frequency and severity signals
+4. Suggest prioritization guidance
+5. Summarize the strongest patterns first
+""",
+            },
+        ],
+        "commands": [
+            {
+                "filename": "research-summary.md",
+                "description": "Create a product research summary",
+                "argument_hint": "<topic>",
+                "body": """Create a concise research summary for the requested topic.
+
+1. Group the main themes.
+2. Separate evidence from interpretation.
+3. Highlight the most important user problems.
+4. End with follow-up questions for the team.
+""",
+            }
+        ],
+    },
+    {
+        "name": "database-performance-lab",
+        "description": "Practical guidance for query review, schema tuning, and operational database performance triage",
+        "category": "data",
+        "skills": [
+            {
+                "name": "review-slow-query",
+                "description": "Review a slow query and suggest likely improvement paths. Use when performance bottlenecks seem query-related.",
+                "body": """# Review Slow Query
+
+Investigate query performance without jumping straight to rewrites.
+
+## When to Use
+
+- A query became slow in production or staging
+- A report or endpoint is timing out
+- The team needs a first-pass tuning review
+
+## Instructions
+
+1. Identify filters, joins, sorts, and scan-heavy operations.
+2. Note likely index, cardinality, or data-shape concerns.
+3. Distinguish query-shape issues from schema issues.
+4. Recommend the smallest high-leverage change first.
+5. Summarize the likely cause of slowness.
+""",
+            },
+            {
+                "name": "plan-schema-tuning",
+                "description": "Plan schema tuning or indexing work. Use when a workload outgrows its original database shape.",
+                "body": """# Plan Schema Tuning
+
+Improve database performance with manageable structural changes.
+
+## When to Use
+
+- Hot paths no longer fit the original schema
+- Reads or writes need more predictable scaling
+- Index strategy is unclear or outdated
+
+## Instructions
+
+1. Identify the read and write patterns that matter most.
+2. Review table growth, skew, and access frequency assumptions.
+3. Recommend index, partitioning, or denormalization options carefully.
+4. Call out migration and write-amplification tradeoffs.
+5. End with a phased tuning plan.
+""",
+            },
+        ],
+        "rules": [
+            {
+                "filename": "query-review-basics.mdc",
+                "description": "Use a practical checklist when reviewing query performance",
+                "alwaysApply": True,
+                "globs": None,
+                "body": """- Check filters, join cardinality, sort order, and pagination behavior first.
+- Distinguish data growth problems from one-off bad queries.
+- Prefer the smallest measurable tuning change before structural rewrites.
+- Note operational tradeoffs such as write amplification and migration cost.
+""",
+            },
+            {
+                "filename": "indexing-tradeoffs.mdc",
+                "description": "Apply when discussing indexes, partitions, or schema tuning",
+                "alwaysApply": False,
+                "globs": ["**/*.sql", "**/*.md", "**/*.py", "**/*.ts"],
+                "body": """- Indexes improve reads but increase write and storage cost.
+- Partitioning helps only when access patterns align with the partition key.
+- Denormalization should be tied to clear workload needs.
+- Note migration and backfill complexity before recommending structural changes.
+""",
+            },
+        ],
+        "agents": [
+            {
+                "name": "query-tuner",
+                "description": "Database query tuner. Use when slow queries or heavy endpoints need first-pass analysis.",
+                "body": """You review database performance issues pragmatically.
+
+When invoked:
+1. Identify the likely source of query cost
+2. Separate query-shape from schema-level issues
+3. Recommend the smallest useful tuning step
+4. Note operational tradeoffs
+5. Return the most likely cause and next move
+""",
+            },
+            {
+                "name": "schema-advisor",
+                "description": "Schema performance advisor. Use when table design or indexing needs a structured review.",
+                "body": """You review schema decisions for workload fit.
+
+When invoked:
+1. Identify key read and write paths
+2. Review indexing and growth assumptions
+3. Flag risky structural changes
+4. Recommend phased improvements
+5. Summarize the highest-value tuning ideas
+""",
+            },
+        ],
+        "commands": [
+            {
+                "filename": "query-review.md",
+                "description": "Review a database query for performance concerns",
+                "argument_hint": "<query-or-table>",
+                "body": """Review the requested query or table for performance concerns.
+
+1. Identify likely sources of cost.
+2. Suggest the smallest tuning improvement first.
+3. Note schema or index implications.
+4. End with the most probable root cause.
+""",
+            }
+        ],
+    },
+    {
+        "name": "developer-onboarding-pack",
+        "description": "Onboarding helpers for repository orientation, setup checklists, and first-week learning paths",
+        "category": "documentation",
+        "skills": [
+            {
+                "name": "draft-onboarding-guide",
+                "description": "Draft an onboarding guide for a repo or team area. Use when setup and orientation are scattered across multiple docs.",
+                "body": """# Draft Onboarding Guide
+
+Make the first week easier for new teammates.
+
+## When to Use
+
+- New engineers need a clearer setup path
+- Knowledge is spread across many docs and chats
+- A team wants a better first-week checklist
+
+## Instructions
+
+1. Start with environment setup and access prerequisites.
+2. Explain the main code areas and how they relate.
+3. Identify the best first debugging and development workflows.
+4. Recommend a small first task or learning exercise.
+5. End with common pitfalls and who to ask for help.
+""",
+            },
+            {
+                "name": "map-repo-concepts",
+                "description": "Map core repository concepts for new contributors. Use when a codebase needs a plain-language orientation.",
+                "body": """# Map Repo Concepts
+
+Translate a complex repo into an approachable mental model.
+
+## When to Use
+
+- New contributors are overwhelmed by directory structure
+- The repo has several services or layers
+- The team wants a quick orientation summary
+
+## Instructions
+
+1. Explain the main folders and their responsibilities.
+2. Highlight the key runtime paths and developer workflows.
+3. Point out common entry points for debugging.
+4. Distinguish what is core versus incidental complexity.
+5. Summarize how a newcomer should start exploring.
+""",
+            },
+        ],
+        "rules": [
+            {
+                "filename": "onboarding-clarity.mdc",
+                "description": "Keep onboarding documentation concrete and beginner-friendly",
+                "alwaysApply": True,
+                "globs": None,
+                "body": """- Assume the reader lacks project-specific context.
+- Lead with setup, access, and success criteria.
+- Prefer concrete examples and repo-specific paths over abstract guidance.
+- Call out common confusion points explicitly.
+""",
+            },
+            {
+                "filename": "first-week-structure.mdc",
+                "description": "Apply when writing onboarding checklists or repository orientation docs",
+                "alwaysApply": False,
+                "globs": ["**/*.md"],
+                "body": """- Organize onboarding around setup, orientation, workflows, and first tasks.
+- Keep steps action-oriented and easy to verify.
+- Highlight where new contributors usually get blocked.
+- End with next learning steps after initial setup is complete.
+""",
+            },
+        ],
+        "agents": [
+            {
+                "name": "onboarding-editor",
+                "description": "Onboarding documentation editor. Use when new contributors need a clearer path into the repo.",
+                "body": """You improve onboarding docs for new teammates.
+
+When invoked:
+1. Identify the beginner's likely starting questions
+2. Reorganize content around first-week needs
+3. Fill gaps in setup, orientation, and debugging workflows
+4. Remove ambiguous project jargon
+5. Return a simpler onboarding structure
+""",
+            },
+            {
+                "name": "repo-orientation-guide",
+                "description": "Repository orientation guide. Use when a complex codebase needs a plain-language overview.",
+                "body": """You explain complex repos in beginner-friendly terms.
+
+When invoked:
+1. Map the main areas of the codebase
+2. Explain the key workflows and entry points
+3. Separate core concepts from optional detail
+4. Highlight likely sources of confusion
+5. Produce a short orientation guide
+""",
+            },
+        ],
+        "commands": [
+            {
+                "filename": "onboarding-checklist.md",
+                "description": "Generate an onboarding checklist for a repo or team area",
+                "argument_hint": "<team-or-repo-area>",
+                "body": """Generate an onboarding checklist for the named area.
+
+1. Cover setup, access, and local workflows.
+2. Explain the main concepts a newcomer should learn first.
+3. Suggest one small starter task.
+4. End with common blockers and who can help.
+""",
+            }
+        ],
+    },
+    {
+        "name": "feature-flag-orchestrator",
+        "description": "Feature-flag planning helpers for staged rollouts, kill switches, and experiment-safe launches",
+        "category": "productivity",
+        "skills": [
+            {
+                "name": "design-flag-rollout",
+                "description": "Design a feature-flag rollout plan. Use when a change needs staged exposure or an emergency off switch.",
+                "body": """# Design Flag Rollout
+
+Plan a safer launch using flags and gradual exposure.
+
+## When to Use
+
+- A risky feature should not launch to everyone at once
+- The team wants a quick rollback path
+- Exposure rules or rollout criteria are still fuzzy
+
+## Instructions
+
+1. Define the flag purpose and who controls it.
+2. Recommend targeting stages and rollback conditions.
+3. Identify metrics that must stay healthy during rollout.
+4. Note how the flag should be cleaned up after launch.
+5. Summarize the safest progression path.
+""",
+            },
+            {
+                "name": "review-flag-lifecycle",
+                "description": "Review feature-flag lifecycle risks. Use when flags accumulate, ownership is unclear, or cleanup gets skipped.",
+                "body": """# Review Flag Lifecycle
+
+Treat flags as temporary infrastructure, not permanent clutter.
+
+## When to Use
+
+- Old flags are piling up
+- Ownership and expiry are unclear
+- Launches rely on flags without cleanup discipline
+
+## Instructions
+
+1. Identify the flag's purpose, owner, and expected lifespan.
+2. Distinguish kill switches from release flags and experiments.
+3. Flag stale conditions, dead branches, or unclear defaults.
+4. Recommend cleanup checkpoints and ownership rules.
+5. End with the main lifecycle risks.
+""",
+            },
+        ],
+        "rules": [
+            {
+                "filename": "flag-discipline.mdc",
+                "description": "Use disciplined feature-flag practices for staged rollouts",
+                "alwaysApply": True,
+                "globs": None,
+                "body": """- Every flag should have a purpose, owner, and cleanup expectation.
+- Prefer simple rollout stages with observable health checks.
+- Keep emergency rollback behavior explicit.
+- Distinguish long-lived kill switches from temporary release flags.
+""",
+            },
+            {
+                "filename": "flag-cleanup.mdc",
+                "description": "Apply when reviewing feature flags, experiments, or rollout controls",
+                "alwaysApply": False,
+                "globs": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.py", "**/*.md"],
+                "body": """- Note stale flags and unclear default behavior.
+- Prefer naming that explains user or system impact.
+- Avoid hidden coupling between multiple rollout flags.
+- Include a cleanup step in the launch plan whenever possible.
+""",
+            },
+        ],
+        "agents": [
+            {
+                "name": "flag-strategist",
+                "description": "Feature-flag strategist. Use when a staged rollout needs clearer structure and guardrails.",
+                "body": """You design safer launches using feature flags.
+
+When invoked:
+1. Define the rollout goal and blast radius
+2. Recommend targeting stages and controls
+3. Clarify health checks and rollback triggers
+4. Note ownership and cleanup expectations
+5. Return a concise rollout plan
+""",
+            },
+            {
+                "name": "flag-lifecycle-auditor",
+                "description": "Flag lifecycle auditor. Use when old flags or unclear ownership create maintenance risk.",
+                "body": """You review feature flags for lifecycle hygiene.
+
+When invoked:
+1. Identify purpose, owner, and intended lifespan
+2. Flag stale or ambiguous defaults
+3. Distinguish release flags from permanent controls
+4. Recommend cleanup actions
+5. Summarize the highest-risk flag debt
+""",
+            },
+        ],
+        "commands": [
+            {
+                "filename": "flag-rollout.md",
+                "description": "Create a staged feature-flag rollout plan",
+                "argument_hint": "<feature-name>",
+                "body": """Create a staged feature-flag rollout plan for the named feature.
+
+1. Define rollout phases and exposure targets.
+2. Specify the metrics and rollback triggers to watch.
+3. Note ownership and cleanup expectations.
+4. End with the safest default state.
+""",
+            }
+        ],
+    },
+    {
+        "name": "frontend-state-toolkit",
+        "description": "Helpers for UI state modeling, async flows, and reducing accidental frontend complexity",
+        "category": "development",
+        "skills": [
+            {
+                "name": "model-ui-state",
+                "description": "Model UI state for a feature or screen. Use when complex loading, error, and editing states are becoming hard to manage.",
+                "body": """# Model UI State
+
+Reduce frontend complexity by naming states clearly.
+
+## When to Use
+
+- A screen has many edge cases or async transitions
+- State feels scattered across several hooks or components
+- The team needs a cleaner mental model before coding
+
+## Instructions
+
+1. Identify the user-visible states and transitions.
+2. Distinguish persistent state from derived display state.
+3. Clarify loading, error, empty, and success paths.
+4. Recommend where state should live and why.
+5. End with the simplest workable state model.
+""",
+            },
+            {
+                "name": "review-async-interactions",
+                "description": "Review async interaction design for race conditions and UX gaps. Use when frontend behavior depends on network timing.",
+                "body": """# Review Async Interactions
+
+Check async UI behavior before it becomes flaky or confusing.
+
+## When to Use
+
+- User actions trigger optimistic or background updates
+- Loading and stale-data behavior feels unclear
+- Network timing could create awkward UX states
+
+## Instructions
+
+1. Identify request, cancel, retry, and refresh paths.
+2. Look for race conditions and stale-data assumptions.
+3. Check how errors and retries are communicated to users.
+4. Recommend clearer ownership between local and remote state.
+5. Summarize the most important interaction risks.
+""",
+            },
+        ],
+        "rules": [
+            {
+                "filename": "ui-state-clarity.mdc",
+                "description": "Use explicit UI state modeling for complex frontend flows",
+                "alwaysApply": True,
+                "globs": None,
+                "body": """- Name user-visible states before choosing implementation detail.
+- Keep derived display state distinct from source-of-truth data.
+- Handle loading, empty, error, and success paths explicitly.
+- Prefer simpler ownership of state over clever shared abstractions.
+""",
+            },
+            {
+                "filename": "async-ui-review.mdc",
+                "description": "Apply when reviewing asynchronous frontend behavior or network-driven state",
+                "alwaysApply": False,
+                "globs": ["**/*.tsx", "**/*.jsx", "**/*.ts", "**/*.js", "**/*.md"],
+                "body": """- Check for race conditions, duplicate submits, and stale responses.
+- Make optimistic updates and rollback behavior explicit.
+- Prefer visible, user-friendly retry and failure handling.
+- Note when state should move closer to the data-fetching boundary.
+""",
+            },
+        ],
+        "agents": [
+            {
+                "name": "state-architect",
+                "description": "Frontend state architect. Use when UI flows need a clearer state model.",
+                "body": """You simplify frontend state models.
+
+When invoked:
+1. Identify user-visible states and transitions
+2. Distinguish source state from derived state
+3. Review ownership across components or hooks
+4. Flag async interaction risks
+5. Return a simpler state design
+""",
+            },
+            {
+                "name": "async-flow-reviewer",
+                "description": "Async flow reviewer. Use when network timing or optimistic updates create UX risk.",
+                "body": """You review asynchronous frontend interactions.
+
+When invoked:
+1. Map request and response timing paths
+2. Check for races and stale data behavior
+3. Review failure, retry, and cancel handling
+4. Suggest clearer state ownership
+5. Summarize the top UX risks
+""",
+            },
+        ],
+        "commands": [
+            {
+                "filename": "state-review.md",
+                "description": "Review the UI state model for a feature or screen",
+                "argument_hint": "<screen-or-feature>",
+                "body": """Review the UI state model for the named screen or feature.
+
+1. Identify the main states and transitions.
+2. Flag async or ownership complexity.
+3. Suggest a simpler mental model.
+4. End with the top state-management risks.
+""",
+            }
+        ],
+    },
+    {
+        "name": "platform-cost-optimizer",
+        "description": "Cost-awareness helpers for infrastructure spend, scaling choices, and efficiency tradeoff reviews",
+        "category": "operations",
+        "skills": [
+            {
+                "name": "analyze-cost-driver",
+                "description": "Analyze likely infrastructure cost drivers. Use when spend increases suddenly or efficiency decisions need more structure.",
+                "body": """# Analyze Cost Driver
+
+Investigate spend changes without guessing blindly.
+
+## When to Use
+
+- Infrastructure cost increased unexpectedly
+- A service is scaling but cost reasons are unclear
+- The team needs a structured cost review
+
+## Instructions
+
+1. Identify the likely cost dimensions and usage patterns.
+2. Separate growth-driven spend from inefficiency-driven spend.
+3. Note the biggest unit-cost contributors first.
+4. Recommend optimizations with realistic tradeoff awareness.
+5. Summarize the highest-value next investigation.
+""",
+            },
+            {
+                "name": "review-efficiency-tradeoff",
+                "description": "Review efficiency tradeoffs for infrastructure decisions. Use when cost, latency, and reliability are pulling in different directions.",
+                "body": """# Review Efficiency Tradeoff
+
+Balance cost reduction against service quality and operational risk.
+
+## When to Use
+
+- A proposed optimization may affect performance or resilience
+- Capacity planning needs a more explicit tradeoff discussion
+- The team wants a clearer cost vs reliability decision
+
+## Instructions
+
+1. Identify the main cost, latency, and reliability levers.
+2. Flag changes that move risk to another layer.
+3. Recommend safe experiments before major cutovers.
+4. Distinguish short-term savings from sustainable efficiency.
+5. End with the safest optimization path.
+""",
+            },
+        ],
+        "rules": [
+            {
+                "filename": "cost-review-basics.mdc",
+                "description": "Use a practical framework when reviewing platform cost",
+                "alwaysApply": True,
+                "globs": None,
+                "body": """- Start with the biggest spend drivers rather than chasing small wins.
+- Separate demand growth from true inefficiency.
+- Evaluate cost changes alongside reliability and latency impact.
+- Prefer reversible experiments before sweeping optimization efforts.
+""",
+            },
+            {
+                "filename": "capacity-and-cost.mdc",
+                "description": "Apply when discussing scaling, efficiency, or infrastructure spend tradeoffs",
+                "alwaysApply": False,
+                "globs": ["**/*.md", "**/*.yaml", "**/*.yml", "**/*.json"],
+                "body": """- Note whether savings come from rightsizing, architecture, or usage behavior.
+- Highlight tradeoffs that increase toil or reduce headroom.
+- Keep unit economics and growth assumptions explicit.
+- Prefer optimizations that are easy to measure and undo.
+""",
+            },
+        ],
+        "agents": [
+            {
+                "name": "cost-investigator",
+                "description": "Platform cost investigator. Use when spend changes need structured analysis.",
+                "body": """You review platform spend with a practical engineering lens.
+
+When invoked:
+1. Identify the most likely cost drivers
+2. Separate growth from inefficiency
+3. Recommend measurable optimization opportunities
+4. Note tradeoffs to reliability or performance
+5. Return the top cost insights first
+""",
+            },
+            {
+                "name": "efficiency-reviewer",
+                "description": "Efficiency tradeoff reviewer. Use when cost-saving proposals may affect performance or resilience.",
+                "body": """You review cost optimizations for hidden tradeoffs.
+
+When invoked:
+1. Identify the targeted savings lever
+2. Check impact on latency, availability, and toil
+3. Recommend safer rollout or experiment paths
+4. Distinguish short-term from durable gains
+5. Summarize the safest efficiency move
+""",
+            },
+        ],
+        "commands": [
+            {
+                "filename": "cost-review.md",
+                "description": "Create a structured platform cost review",
+                "argument_hint": "<service-or-system>",
+                "body": """Create a structured cost review for the named service or system.
+
+1. Identify likely cost drivers.
+2. Separate growth from inefficiency.
+3. Suggest the highest-value optimizations.
+4. End with the main tradeoffs to watch.
+""",
+            }
+        ],
+    },
+    {
+        "name": "reliability-game-day",
+        "description": "Game day planning helpers for resilience drills, failure scenarios, and recovery exercise reviews",
+        "category": "operations",
+        "skills": [
+            {
+                "name": "plan-game-day",
+                "description": "Plan a reliability game day. Use when a team wants to rehearse failure handling before a real incident.",
+                "body": """# Plan Game Day
+
+Create a realistic failure exercise with clear learning goals.
+
+## When to Use
+
+- A service needs resilience practice
+- The team wants to validate runbooks or alerting
+- Incident response skills need rehearsal
+
+## Instructions
+
+1. Pick a scenario tied to meaningful failure modes.
+2. Define success criteria for detection, mitigation, and communication.
+3. Scope the blast radius and safety controls for the exercise.
+4. Clarify roles, observers, and stopping conditions.
+5. End with the learning outcomes to capture.
+""",
+            },
+            {
+                "name": "review-recovery-exercise",
+                "description": "Review a completed recovery exercise and extract follow-up actions. Use when a game day generated lessons that need structure.",
+                "body": """# Review Recovery Exercise
+
+Turn a practice scenario into concrete reliability improvements.
+
+## When to Use
+
+- A game day or drill has completed
+- The team wants a concise lessons-learned summary
+- Operational gaps need prioritization
+
+## Instructions
+
+1. Summarize what scenario was tested and why.
+2. Distinguish expected difficulty from surprising failures.
+3. Capture gaps in tooling, docs, ownership, and coordination.
+4. Turn lessons into specific reliability follow-ups.
+5. End with the most urgent improvements.
+""",
+            },
+        ],
+        "rules": [
+            {
+                "filename": "exercise-safety.mdc",
+                "description": "Use explicit safety controls when planning game days and drills",
+                "alwaysApply": True,
+                "globs": None,
+                "body": """- Keep game day blast radius and stopping conditions explicit.
+- Tie exercises to realistic, high-value failure modes.
+- Separate learning goals from performative chaos.
+- Capture follow-up actions while the evidence is fresh.
+""",
+            },
+            {
+                "filename": "drill-retrospective.mdc",
+                "description": "Apply when summarizing resilience drills or recovery exercises",
+                "alwaysApply": False,
+                "globs": ["**/*.md"],
+                "body": """- Focus on what detection, mitigation, and communication revealed.
+- Distinguish expected weak spots from surprising gaps.
+- Turn observations into concrete tooling, docs, or process improvements.
+- Keep the retrospective concise and action-oriented.
+""",
+            },
+        ],
+        "agents": [
+            {
+                "name": "game-day-planner",
+                "description": "Reliability game day planner. Use when teams want to rehearse failure scenarios safely.",
+                "body": """You design resilience exercises with clear learning goals.
+
+When invoked:
+1. Choose a meaningful failure scenario
+2. Define success criteria and safety controls
+3. Clarify roles and exercise boundaries
+4. Identify evidence to capture during the drill
+5. Return a practical game day plan
+""",
+            },
+            {
+                "name": "exercise-retrospective-editor",
+                "description": "Recovery exercise retrospective editor. Use when drill notes need to become actionable follow-ups.",
+                "body": """You summarize drills into actionable reliability work.
+
+When invoked:
+1. Identify what was tested and observed
+2. Separate expected from surprising failures
+3. Group issues by docs, tooling, process, or ownership
+4. Prioritize the most important follow-ups
+5. Produce a concise retrospective summary
+""",
+            },
+        ],
+        "commands": [
+            {
+                "filename": "game-day-plan.md",
+                "description": "Create a reliability game day plan",
+                "argument_hint": "<service-name>",
+                "body": """Create a reliability game day plan for the named service.
+
+1. Choose a realistic failure scenario.
+2. Define exercise safety controls and success criteria.
+3. Note the roles and evidence to capture.
+4. End with the follow-up questions the drill should answer.
+""",
+            }
+        ],
+    },
+    {
+        "name": "support-escalation-desk",
+        "description": "Support triage and escalation helpers for customer-impacting bugs, repro quality, and handoff clarity",
+        "category": "productivity",
+        "skills": [
+            {
+                "name": "triage-support-escalation",
+                "description": "Triage a support escalation for engineering. Use when customer reports need clearer severity, repro, and ownership framing.",
+                "body": """# Triage Support Escalation
+
+Turn support noise into an actionable engineering handoff.
+
+## When to Use
+
+- A customer issue is being escalated to engineering
+- Severity or impact is not yet clear
+- Reproduction details are partial or inconsistent
+
+## Instructions
+
+1. Summarize the customer impact and urgency.
+2. Separate verified facts from suspected causes.
+3. Identify the minimum reproduction or missing evidence.
+4. Recommend owner, priority, and next investigative step.
+5. End with the clearest engineering handoff summary.
+""",
+            },
+            {
+                "name": "improve-bug-repro",
+                "description": "Improve a bug reproduction report. Use when customer issues are real but the repro path is still vague.",
+                "body": """# Improve Bug Repro
+
+Sharpen a bug report until engineering can act on it.
+
+## When to Use
+
+- A bug report lacks decisive reproduction steps
+- Several similar tickets disagree on exact behavior
+- Engineering needs a cleaner repro hypothesis
+
+## Instructions
+
+1. Identify what is confirmed versus uncertain.
+2. Rewrite the repro using concrete user actions and expected behavior.
+3. Call out environment, account, or data dependencies.
+4. Suggest the next evidence needed if the repro is still weak.
+5. End with the most likely path to confirmation.
+""",
+            },
+        ],
+        "rules": [
+            {
+                "filename": "support-handoff-quality.mdc",
+                "description": "Keep support escalations factual, reproducible, and owner-ready",
+                "alwaysApply": True,
+                "globs": None,
+                "body": """- Lead with customer impact and severity, not speculation.
+- Separate verified behavior from likely cause.
+- Include reproduction quality and missing evidence explicitly.
+- End with a clear owner and next investigative step.
+""",
+            },
+            {
+                "filename": "repro-writing.mdc",
+                "description": "Apply when writing bug repros or engineering handoffs from support",
+                "alwaysApply": False,
+                "globs": ["**/*.md", "**/*.txt", "**/*.json"],
+                "body": """- Prefer concrete user actions and observed results over vague summaries.
+- Note environment, account, or data prerequisites.
+- Highlight where evidence is still incomplete.
+- Keep the handoff concise enough for fast engineering intake.
+""",
+            },
+        ],
+        "agents": [
+            {
+                "name": "support-triager",
+                "description": "Support escalation triager. Use when customer issues need a cleaner engineering handoff.",
+                "body": """You turn support escalations into actionable engineering intake.
+
+When invoked:
+1. Summarize impact and severity
+2. Separate evidence from theory
+3. Improve the reproduction path
+4. Recommend owner and urgency
+5. Return a concise handoff summary
+""",
+            },
+            {
+                "name": "repro-editor",
+                "description": "Bug repro editor. Use when reports need sharper reproduction detail and less ambiguity.",
+                "body": """You improve bug reports for reproducibility.
+
+When invoked:
+1. Identify missing or weak evidence
+2. Rewrite the repro path clearly
+3. Note dependencies and assumptions
+4. Suggest the next confirming data point
+5. Summarize the most likely reproduction path
+""",
+            },
+        ],
+        "commands": [
+            {
+                "filename": "support-brief.md",
+                "description": "Create an engineering-ready support escalation brief",
+                "argument_hint": "<issue-topic>",
+                "body": """Create an engineering-ready brief for the named support issue.
+
+1. Summarize customer impact and urgency.
+2. Separate facts from suspected causes.
+3. Improve the reproduction details.
+4. End with recommended owner and next step.
+""",
+            }
+        ],
+    },
+    {
+        "name": "workflow-automation-starter",
+        "description": "Workflow automation helpers for recurring team tasks, checklists, and lightweight operational automations",
+        "category": "productivity",
+        "skills": [
+            {
+                "name": "design-team-automation",
+                "description": "Design a lightweight team automation. Use when a recurring manual workflow is wasting time but does not need a large platform investment.",
+                "body": """# Design Team Automation
+
+Create practical automations for repetitive work.
+
+## When to Use
+
+- A team repeats the same checklist or status update often
+- A manual workflow is error-prone but still lightweight
+- The user wants a small automation idea before implementation
+
+## Instructions
+
+1. Identify the trigger, inputs, and desired output.
+2. Separate decision-making from mechanical steps.
+3. Prefer simple, observable automations over brittle magic.
+4. Call out ownership, fallback, and failure handling.
+5. End with the smallest useful automation plan.
+""",
+            },
+            {
+                "name": "review-checklist-workflow",
+                "description": "Review a checklist-driven workflow for automation candidates. Use when a process may be ripe for partial automation.",
+                "body": """# Review Checklist Workflow
+
+Find the parts of a workflow that are best suited for automation.
+
+## When to Use
+
+- A runbook or checklist contains repeatable mechanical steps
+- The team is not sure what should stay manual
+- A recurring process needs simplification
+
+## Instructions
+
+1. Identify the repetitive, deterministic steps.
+2. Flag where human judgment is still required.
+3. Suggest safe handoff points between people and automation.
+4. Recommend simple instrumentation or success checks.
+5. Summarize the most automation-friendly slice.
+""",
+            },
+        ],
+        "rules": [
+            {
+                "filename": "automation-pragmatism.mdc",
+                "description": "Prefer simple, observable automations for recurring team workflows",
+                "alwaysApply": True,
+                "globs": None,
+                "body": """- Automate the mechanical parts first, not the ambiguous decisions.
+- Prefer workflows that are easy to observe, retry, and disable.
+- Keep ownership and fallback behavior explicit.
+- Avoid overengineering small process improvements.
+""",
+            },
+            {
+                "filename": "workflow-boundaries.mdc",
+                "description": "Apply when reviewing recurring workflows for automation opportunities",
+                "alwaysApply": False,
+                "globs": ["**/*.md", "**/*.json", "**/*.yaml", "**/*.yml"],
+                "body": """- Separate deterministic checklist steps from judgment-heavy steps.
+- Prefer small automations that remove obvious toil.
+- Note monitoring, retries, and manual override needs.
+- Keep success criteria concrete and easy to verify.
+""",
+            },
+        ],
+        "agents": [
+            {
+                "name": "automation-designer",
+                "description": "Workflow automation designer. Use when recurring manual tasks need a simple automation plan.",
+                "body": """You design small, practical team automations.
+
+When invoked:
+1. Identify the trigger and repetitive steps
+2. Separate automation-worthy tasks from human judgment
+3. Define fallback and observability needs
+4. Recommend the smallest viable automation
+5. Return a concise workflow plan
+""",
+            },
+            {
+                "name": "process-reviewer",
+                "description": "Process automation reviewer. Use when a checklist or workflow should be simplified before tooling is built.",
+                "body": """You review team workflows for safe automation opportunities.
+
+When invoked:
+1. Map the current process
+2. Highlight repetitive and failure-prone steps
+3. Suggest where automation fits best
+4. Note what should remain manual
+5. Summarize the highest-value improvement
+""",
+            },
+        ],
+        "commands": [
+            {
+                "filename": "automation-plan.md",
+                "description": "Create a lightweight automation plan for a recurring workflow",
+                "argument_hint": "<workflow-name>",
+                "body": """Create a lightweight automation plan for the named workflow.
+
+1. Identify the trigger and repetitive steps.
+2. Separate automation from human judgment.
+3. Note fallback and monitoring expectations.
+4. End with the smallest useful automation slice.
+""",
+            }
+        ],
+    },
 ]
 
 

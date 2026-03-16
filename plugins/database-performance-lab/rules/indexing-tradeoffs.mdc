@@ -1,0 +1,14 @@
+---
+description: Apply when discussing indexes, partitions, or schema tuning
+alwaysApply: false
+globs:
+  - **/*.sql
+  - **/*.md
+  - **/*.py
+  - **/*.ts
+---
+
+- Indexes improve reads but increase write and storage cost.
+- Partitioning helps only when access patterns align with the partition key.
+- Denormalization should be tied to clear workload needs.
+- Note migration and backfill complexity before recommending structural changes.

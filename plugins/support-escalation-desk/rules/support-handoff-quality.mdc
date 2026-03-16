@@ -1,0 +1,9 @@
+---
+description: Keep support escalations factual, reproducible, and owner-ready
+alwaysApply: true
+---
+
+- Lead with customer impact and severity, not speculation.
+- Separate verified behavior from likely cause.
+- Include reproduction quality and missing evidence explicitly.
+- End with a clear owner and next investigative step.

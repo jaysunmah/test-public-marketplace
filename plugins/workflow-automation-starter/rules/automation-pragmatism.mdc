@@ -1,0 +1,9 @@
+---
+description: Prefer simple, observable automations for recurring team workflows
+alwaysApply: true
+---
+
+- Automate the mechanical parts first, not the ambiguous decisions.
+- Prefer workflows that are easy to observe, retry, and disable.
+- Keep ownership and fallback behavior explicit.
+- Avoid overengineering small process improvements.

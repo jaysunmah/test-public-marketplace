@@ -1,0 +1,9 @@
+---
+description: Keep onboarding documentation concrete and beginner-friendly
+alwaysApply: true
+---
+
+- Assume the reader lacks project-specific context.
+- Lead with setup, access, and success criteria.
+- Prefer concrete examples and repo-specific paths over abstract guidance.
+- Call out common confusion points explicitly.

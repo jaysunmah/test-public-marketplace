@@ -1,0 +1,14 @@
+{
+  "name": "backend-refactor-coach",
+  "description": "Refactoring guidance for service boundaries, legacy modules, and incremental backend cleanups",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "development",
+    "workflow",
+    "assistant"
+  ]
+}

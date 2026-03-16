@@ -1,0 +1,9 @@
+---
+description: Use explicit safety controls when planning game days and drills
+alwaysApply: true
+---
+
+- Keep game day blast radius and stopping conditions explicit.
+- Tie exercises to realistic, high-value failure modes.
+- Separate learning goals from performative chaos.
+- Capture follow-up actions while the evidence is fresh.

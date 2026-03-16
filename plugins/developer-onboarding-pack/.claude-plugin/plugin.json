@@ -1,0 +1,14 @@
+{
+  "name": "developer-onboarding-pack",
+  "description": "Onboarding helpers for repository orientation, setup checklists, and first-week learning paths",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "documentation",
+    "workflow",
+    "assistant"
+  ]
+}

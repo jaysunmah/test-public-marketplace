@@ -1,0 +1,14 @@
+---
+description: Apply when reviewing recurring workflows for automation opportunities
+alwaysApply: false
+globs:
+  - **/*.md
+  - **/*.json
+  - **/*.yaml
+  - **/*.yml
+---
+
+- Separate deterministic checklist steps from judgment-heavy steps.
+- Prefer small automations that remove obvious toil.
+- Note monitoring, retries, and manual override needs.
+- Keep success criteria concrete and easy to verify.

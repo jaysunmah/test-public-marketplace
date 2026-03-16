@@ -181,6 +181,126 @@
       "source": "./plugins/test-automation-lab",
       "category": "quality",
       "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/test-automation-lab"
+    },
+    {
+      "name": "backend-refactor-coach",
+      "description": "Refactoring guidance for service boundaries, legacy modules, and incremental backend cleanups",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/backend-refactor-coach",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/backend-refactor-coach"
+    },
+    {
+      "name": "customer-research-synth",
+      "description": "Research synthesis helpers for support themes, interview notes, and product insight summaries",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/customer-research-synth",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/customer-research-synth"
+    },
+    {
+      "name": "database-performance-lab",
+      "description": "Practical guidance for query review, schema tuning, and operational database performance triage",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/database-performance-lab",
+      "category": "data",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/database-performance-lab"
+    },
+    {
+      "name": "developer-onboarding-pack",
+      "description": "Onboarding helpers for repository orientation, setup checklists, and first-week learning paths",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/developer-onboarding-pack",
+      "category": "documentation",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/developer-onboarding-pack"
+    },
+    {
+      "name": "feature-flag-orchestrator",
+      "description": "Feature-flag planning helpers for staged rollouts, kill switches, and experiment-safe launches",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/feature-flag-orchestrator",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/feature-flag-orchestrator"
+    },
+    {
+      "name": "frontend-state-toolkit",
+      "description": "Helpers for UI state modeling, async flows, and reducing accidental frontend complexity",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/frontend-state-toolkit",
+      "category": "development",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/frontend-state-toolkit"
+    },
+    {
+      "name": "platform-cost-optimizer",
+      "description": "Cost-awareness helpers for infrastructure spend, scaling choices, and efficiency tradeoff reviews",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/platform-cost-optimizer",
+      "category": "operations",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/platform-cost-optimizer"
+    },
+    {
+      "name": "reliability-game-day",
+      "description": "Game day planning helpers for resilience drills, failure scenarios, and recovery exercise reviews",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/reliability-game-day",
+      "category": "operations",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/reliability-game-day"
+    },
+    {
+      "name": "support-escalation-desk",
+      "description": "Support triage and escalation helpers for customer-impacting bugs, repro quality, and handoff clarity",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/support-escalation-desk",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/support-escalation-desk"
+    },
+    {
+      "name": "workflow-automation-starter",
+      "description": "Workflow automation helpers for recurring team tasks, checklists, and lightweight operational automations",
+      "version": "1.0.0",
+      "author": {
+        "name": "Test Author",
+        "email": "test@example.com"
+      },
+      "source": "./plugins/workflow-automation-starter",
+      "category": "productivity",
+      "homepage": "https://github.com/jaysunmah/test-marketplace/tree/main/plugins/workflow-automation-starter"
     }
   ]
 }

@@ -1,0 +1,9 @@
+---
+description: Use disciplined feature-flag practices for staged rollouts
+alwaysApply: true
+---
+
+- Every flag should have a purpose, owner, and cleanup expectation.
+- Prefer simple rollout stages with observable health checks.
+- Keep emergency rollback behavior explicit.
+- Distinguish long-lived kill switches from temporary release flags.

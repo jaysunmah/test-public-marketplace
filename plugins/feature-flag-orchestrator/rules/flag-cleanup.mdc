@@ -1,0 +1,15 @@
+---
+description: Apply when reviewing feature flags, experiments, or rollout controls
+alwaysApply: false
+globs:
+  - **/*.ts
+  - **/*.tsx
+  - **/*.js
+  - **/*.py
+  - **/*.md
+---
+
+- Note stale flags and unclear default behavior.
+- Prefer naming that explains user or system impact.
+- Avoid hidden coupling between multiple rollout flags.
+- Include a cleanup step in the launch plan whenever possible.

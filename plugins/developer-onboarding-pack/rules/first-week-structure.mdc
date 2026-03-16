@@ -1,0 +1,11 @@
+---
+description: Apply when writing onboarding checklists or repository orientation docs
+alwaysApply: false
+globs:
+  - **/*.md
+---
+
+- Organize onboarding around setup, orientation, workflows, and first tasks.
+- Keep steps action-oriented and easy to verify.
+- Highlight where new contributors usually get blocked.
+- End with next learning steps after initial setup is complete.

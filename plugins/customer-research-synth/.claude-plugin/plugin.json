@@ -1,0 +1,14 @@
+{
+  "name": "customer-research-synth",
+  "description": "Research synthesis helpers for support themes, interview notes, and product insight summaries",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "productivity",
+    "workflow",
+    "assistant"
+  ]
+}

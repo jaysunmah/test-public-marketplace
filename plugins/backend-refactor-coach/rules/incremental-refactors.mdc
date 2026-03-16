@@ -1,0 +1,9 @@
+---
+description: Prefer incremental backend refactors over broad rewrites
+alwaysApply: true
+---
+
+- Separate structural cleanup from behavior changes whenever possible.
+- Keep public interfaces stable while internals are being moved.
+- Name boundaries by responsibility, not by framework artifact alone.
+- Prefer a sequence of reviewable steps over a one-shot rewrite.

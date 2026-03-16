@@ -1,0 +1,14 @@
+---
+description: Apply when discussing scaling, efficiency, or infrastructure spend tradeoffs
+alwaysApply: false
+globs:
+  - **/*.md
+  - **/*.yaml
+  - **/*.yml
+  - **/*.json
+---
+
+- Note whether savings come from rightsizing, architecture, or usage behavior.
+- Highlight tradeoffs that increase toil or reduce headroom.
+- Keep unit economics and growth assumptions explicit.
+- Prefer optimizations that are easy to measure and undo.

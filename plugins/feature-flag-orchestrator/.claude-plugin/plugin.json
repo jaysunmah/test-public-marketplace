@@ -1,0 +1,14 @@
+{
+  "name": "feature-flag-orchestrator",
+  "description": "Feature-flag planning helpers for staged rollouts, kill switches, and experiment-safe launches",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "productivity",
+    "workflow",
+    "assistant"
+  ]
+}

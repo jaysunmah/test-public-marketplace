@@ -1,0 +1,11 @@
+---
+description: Apply when summarizing resilience drills or recovery exercises
+alwaysApply: false
+globs:
+  - **/*.md
+---
+
+- Focus on what detection, mitigation, and communication revealed.
+- Distinguish expected weak spots from surprising gaps.
+- Turn observations into concrete tooling, docs, or process improvements.
+- Keep the retrospective concise and action-oriented.

@@ -1,0 +1,13 @@
+---
+description: Apply when writing bug repros or engineering handoffs from support
+alwaysApply: false
+globs:
+  - **/*.md
+  - **/*.txt
+  - **/*.json
+---
+
+- Prefer concrete user actions and observed results over vague summaries.
+- Note environment, account, or data prerequisites.
+- Highlight where evidence is still incomplete.
+- Keep the handoff concise enough for fast engineering intake.

@@ -1,0 +1,9 @@
+---
+description: Use a practical checklist when reviewing query performance
+alwaysApply: true
+---
+
+- Check filters, join cardinality, sort order, and pagination behavior first.
+- Distinguish data growth problems from one-off bad queries.
+- Prefer the smallest measurable tuning change before structural rewrites.
+- Note operational tradeoffs such as write amplification and migration cost.

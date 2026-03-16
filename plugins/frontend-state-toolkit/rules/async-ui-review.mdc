@@ -1,0 +1,15 @@
+---
+description: Apply when reviewing asynchronous frontend behavior or network-driven state
+alwaysApply: false
+globs:
+  - **/*.tsx
+  - **/*.jsx
+  - **/*.ts
+  - **/*.js
+  - **/*.md
+---
+
+- Check for race conditions, duplicate submits, and stale responses.
+- Make optimistic updates and rollback behavior explicit.
+- Prefer visible, user-friendly retry and failure handling.
+- Note when state should move closer to the data-fetching boundary.

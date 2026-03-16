@@ -1,0 +1,13 @@
+---
+description: Apply when summarizing interviews, feedback, or product research notes
+alwaysApply: false
+globs:
+  - **/*.md
+  - **/*.txt
+  - **/*.json
+---
+
+- Lead with the clearest themes before edge-case observations.
+- Quote or paraphrase evidence when it improves credibility.
+- Distinguish user goals, blockers, and current workarounds.
+- End with suggested follow-up questions or experiments.

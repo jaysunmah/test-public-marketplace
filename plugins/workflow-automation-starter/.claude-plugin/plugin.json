@@ -1,0 +1,14 @@
+{
+  "name": "workflow-automation-starter",
+  "description": "Workflow automation helpers for recurring team tasks, checklists, and lightweight operational automations",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "productivity",
+    "workflow",
+    "assistant"
+  ]
+}

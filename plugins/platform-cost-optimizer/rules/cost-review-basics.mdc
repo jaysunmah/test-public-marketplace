@@ -1,0 +1,9 @@
+---
+description: Use a practical framework when reviewing platform cost
+alwaysApply: true
+---
+
+- Start with the biggest spend drivers rather than chasing small wins.
+- Separate demand growth from true inefficiency.
+- Evaluate cost changes alongside reliability and latency impact.
+- Prefer reversible experiments before sweeping optimization efforts.

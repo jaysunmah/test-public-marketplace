@@ -1,0 +1,14 @@
+{
+  "name": "reliability-game-day",
+  "description": "Game day planning helpers for resilience drills, failure scenarios, and recovery exercise reviews",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "operations",
+    "workflow",
+    "assistant"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "frontend-state-toolkit",
+  "description": "Helpers for UI state modeling, async flows, and reducing accidental frontend complexity",
+  "version": "1.0.0",
+  "author": {
+    "name": "Test Author",
+    "email": "test@example.com"
+  },
+  "keywords": [
+    "development",
+    "workflow",
+    "assistant"
+  ]
+}

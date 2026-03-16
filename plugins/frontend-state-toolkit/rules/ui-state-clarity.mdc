@@ -1,0 +1,9 @@
+---
+description: Use explicit UI state modeling for complex frontend flows
+alwaysApply: true
+---
+
+- Name user-visible states before choosing implementation detail.
+- Keep derived display state distinct from source-of-truth data.
+- Handle loading, empty, error, and success paths explicitly.
+- Prefer simpler ownership of state over clever shared abstractions.

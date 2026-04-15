@@ -1,4 +1,4 @@
-# Test Marketplace.
+# Test Marketplace v1
 
 A **private** test marketplace repo for development and testing of the Claude Code plugin marketplace system.
 
